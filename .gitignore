@@ -1,0 +1,36 @@
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code settings (optional)
+.vscode/
+
+# Build Results
+*.exe
+*.dll
+*.pdb
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Logs
+*.log
+
+# Rider / JetBrains IDE files
+.idea/
+
+# Dotnet tool restore cache
+.dotnet-tools.json
