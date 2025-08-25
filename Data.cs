@@ -1,6 +1,6 @@
 internal static class Data
 {   
-    public static int ProductId = 2;
+    public static int ProductId = 0;
     public static List<Product> Products = new List<Product>()
     {
         new Product(1, "P001", "Apple", 1.5m, 100, "Fruit"),

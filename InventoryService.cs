@@ -25,7 +25,11 @@ internal class InventoryService
             goto BeforeQuantity;
         }
 
-        Data.ProductId++;
+        // Data.ProductId++;
+
+        // fix the number issue if start from 0
+        int no = Data.Products.Max(p => p.Id);
+        Data.ProductId = no + 1;
 
         string productCode = "P" + Data.ProductId.ToString().PadLeft(3, '0');
 
@@ -89,6 +93,15 @@ internal class InventoryService
         {
             Console.WriteLine("Product not found!");
             goto BeforeCode;
+        }
+
+        Console.Write("Product found: " + product.Name + "\n");
+        Console.Write("Are you sure to delete this product? (y/n): ");
+        string confirm = Console.ReadLine()!;
+        if (confirm.ToLower() != "y")
+        {
+            Console.Write("Delete operation cancelled.");
+            return;
         }
 
         Data.Products.Remove(product);

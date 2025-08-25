@@ -6,7 +6,8 @@ Console.WriteLine("1. Create Product");
 Console.WriteLine("2. View Products");
 Console.WriteLine("3. Update Product");
 Console.WriteLine("4. Delete Product");
-Console.Write("Enter your choice (1-4): ");
+Console.WriteLine("5. Exit");
+Console.Write("Enter your choice (1-5): ");
 string choice = Console.ReadLine()!;
 
 InventoryService inventoryService = new InventoryService();
@@ -29,6 +30,9 @@ switch (choice)
         Console.WriteLine("Delete Product");
         inventoryService.DeleteProduct();
         break;
+    case "5":
+        Console.WriteLine("Exiting the program. Goodbye!");
+        return;
     default:
         Console.WriteLine("Invalid choice. Please select a valid option.");
         goto BeforeSystem;
