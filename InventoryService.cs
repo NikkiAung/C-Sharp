@@ -35,4 +35,14 @@ internal class InventoryService
 
         Console.Write("Product added successfully!");
     } 
+
+    public void ViewProducts()
+    {
+        Console.WriteLine("Product List:");
+        Console.WriteLine("ID\tCode\tName\tPrice\tQuantity\tCategory");
+        foreach (var product in Data.Products)
+        {
+            Console.WriteLine($"{product.Id}\t{product.Code}\t{product.Name}\t{product.Price}\t{product.Quantity}\t{product.Category}");
+        }
+    }
 }
