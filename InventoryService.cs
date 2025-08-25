@@ -34,7 +34,7 @@ internal class InventoryService
         Data.Products.Add(product);
 
         Console.Write("Product added successfully!");
-    } 
+    }
 
     public void ViewProducts()
     {
@@ -44,5 +44,55 @@ internal class InventoryService
         {
             Console.WriteLine($"{product.Id}\t{product.Code}\t{product.Name}\t{product.Price}\t{product.Quantity}\t{product.Category}");
         }
+    }
+
+    public void UpdateProducts()
+    {
+    BeforeQuantity:
+        Console.Write("Enter Product code to update: ");
+        string productCode = Console.ReadLine()!;
+
+        var product = Data.Products.FirstOrDefault(p => p.Code == productCode);
+
+        if (product is null)
+        {
+            Console.WriteLine("Product not found!");
+            goto BeforeQuantity;
+        }
+
+        Console.Write("Product found: " + product.Name + "\n");
+        Console.Write($"Code: ({product.Code}):, Name: ({product.Name}): , Quantity: ({product.Quantity}): ");
+
+    BeforeInputQuantity:
+        string quantityInput = Console.ReadLine()!;
+        int quantity = 0;
+        if (!int.TryParse(quantityInput, out quantity) || quantity < 0)
+        {
+            Console.Write("Invalid quantity. Please enter a valid non-negative integer.");
+            goto BeforeInputQuantity;
+        }
+
+        product.Quantity -= quantity;
+
+        Console.Write("Product updated successfully!");
+    }
+
+    public void DeleteProduct()
+    {
+    BeforeCode:
+        Console.Write("Enter Product code to delete: ");
+        string productCode = Console.ReadLine()!;
+
+        var product = Data.Products.FirstOrDefault(p => p.Code == productCode);
+
+        if (product is null)
+        {
+            Console.WriteLine("Product not found!");
+            goto BeforeCode;
+        }
+
+        Data.Products.Remove(product);
+
+        Console.Write("Product deleted successfully!");
     }
 }
