@@ -23,7 +23,8 @@ public class CRUDWithMicrosoftSQLStudio
     }
 
     public void Create()
-    {
+    {   
+        Console.WriteLine("Creating new record...");
         Console.Write("Enter Name: ");
         string name = Console.ReadLine()!;
         Console.Write("Enter GitHub User Name: ");
@@ -55,7 +56,7 @@ public class CRUDWithMicrosoftSQLStudio
 
     public void Read()
     {
-
+        Console.WriteLine("Reading data from SQL Server table...");
         SqlConnection connection = new SqlConnection(_builder.ConnectionString);
         connection.Open();
 
@@ -75,8 +76,10 @@ public class CRUDWithMicrosoftSQLStudio
         }
     }
 
-    public void Detail(int no)
-    {
+    public void Detail()
+    {   
+        Console.Write("Enter No to view details: ");
+        int no = int.Parse(Console.ReadLine()!);
         SqlConnection connection = new SqlConnection(_builder.ConnectionString);
         connection.Open();
 
@@ -96,7 +99,7 @@ public class CRUDWithMicrosoftSQLStudio
 
     public void Update()
     {
-        Console.Write("Enter No to Update: ");
+        Console.Write("Enter Number to Update: ");
         int no = int.Parse(Console.ReadLine()!);
         Console.Write("Enter new Name: ");
         string name = Console.ReadLine()!;

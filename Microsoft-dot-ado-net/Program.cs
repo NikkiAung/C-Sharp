@@ -6,7 +6,7 @@ Console.WriteLine("Hello, World!");
 
 CRUDWithMicrosoftSQLStudio service = new CRUDWithMicrosoftSQLStudio();
 service.Read();
-service.Detail(1);
+service.Detail();
 service.Create();
 service.Update();
 service.Delete();
