@@ -19,7 +19,7 @@ https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
 - [x] Console App + Db (SQL Server) 
 
     * [x] ADO.NET (CRUD) – Old School 
-    * Dapper (CRUD) ORM – Micro ORM (query) 
+    * [x] Dapper (CRUD) ORM – Micro ORM (query) 
     * EFCore (CRUD) ORM – Full ORM (no query)
 
 - Postman
