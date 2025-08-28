@@ -4,13 +4,13 @@
 
 Simple Console App (CRUD)
 
-https://github.com/user-attachments/assets/523aab2f-1fe6-4adb-a996-a4143cd9c15e
+https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
 
 Console App + Db with ADO.NET (CRUD)
 
-https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
+https://github.com/user-attachments/assets/523aab2f-1fe6-4adb-a996-a4143cd9c15e
 
-## Completion Topic ✅
+## Completed Topic ✅
 
 - [x] C#  
 - [x] SQL
