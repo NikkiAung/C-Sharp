@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper-micro-orm-shared-ser
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cosole-app-using-dapper-common-service", "..\Cosole-app-using-dapper-common-service\Cosole-app-using-dapper-common-service.csproj", "{FA175473-BB58-498C-91DE-F5B601FCF56D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Efcore-console-app", "..\Efcore-console-app\Efcore-console-app.csproj", "{41127281-8101-4FAC-8086-36151542F38D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model-console-app", "..\Model-console-app\Model-console-app.csproj", "{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,30 @@ Global
 		{FA175473-BB58-498C-91DE-F5B601FCF56D}.Release|x64.Build.0 = Release|Any CPU
 		{FA175473-BB58-498C-91DE-F5B601FCF56D}.Release|x86.ActiveCfg = Release|Any CPU
 		{FA175473-BB58-498C-91DE-F5B601FCF56D}.Release|x86.Build.0 = Release|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Debug|x64.Build.0 = Debug|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Debug|x86.Build.0 = Debug|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Release|x64.ActiveCfg = Release|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Release|x64.Build.0 = Release|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Release|x86.ActiveCfg = Release|Any CPU
+		{41127281-8101-4FAC-8086-36151542F38D}.Release|x86.Build.0 = Release|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Debug|x64.Build.0 = Debug|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Debug|x86.Build.0 = Debug|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Release|x64.ActiveCfg = Release|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Release|x64.Build.0 = Release|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Release|x86.ActiveCfg = Release|Any CPU
+		{148A10C4-EE5F-48BE-B7B9-243EF6EE1970}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
