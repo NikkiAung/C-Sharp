@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace SLHDotNetTrainingBatch1.ConsoleApp4
+namespace Efcore_console_app
 {
     [Table("Tbl_ProductCategory")]
     public class ProductCategory

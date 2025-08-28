@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using SLHDotNetTrainingBatch1.ConsoleApp4;
+// using SLHDotNetTrainingBatch1.ConsoleApp4;
+using Efcore_console_app;
 
 Console.WriteLine("Hello, World!");
 
