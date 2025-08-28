@@ -2,16 +2,22 @@
 
 ## Demo
 
-https://github.com/user-attachments/assets/7dd296a1-898a-42e5-b417-655b9eaf8b84
+- Simple Console App (CRUD)
+https://github.com/user-attachments/assets/523aab2f-1fe6-4adb-a996-a4143cd9c15e
 
-- [x] C# Basic  
-- [x] SQL Basic
+- Console App + Db with ADO.NET (CRUD)
+https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
 
-- Console App  
-- Console App + Db (Memory Database)  
-- Console App + Db (SQL Server) 
+## Compeletion 
 
-    * ADO.NET (CRUD) – Old School 
+- [x] C#  
+- [x] SQL
+
+- [x] Console App  
+- [x] Console App + Db (Memory Database)  
+- [x] Console App + Db (SQL Server) 
+
+    * [x] ADO.NET (CRUD) – Old School 
     * Dapper (CRUD) ORM – Micro ORM (query) 
     * EFCore (CRUD) ORM – Full ORM (no query)
 
