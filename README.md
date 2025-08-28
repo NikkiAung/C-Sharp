@@ -1,14 +1,13 @@
 # C# DotNet
 
 ## Demo 🎥
+Console App + Db with ADO.NET integrated with Microsoft Azure Data Studio (CRUD)
+
+https://github.com/user-attachments/assets/523aab2f-1fe6-4adb-a996-a4143cd9c15e
 
 Simple Console App (CRUD)
 
 https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
-
-Console App + Db with ADO.NET (CRUD)
-
-https://github.com/user-attachments/assets/523aab2f-1fe6-4adb-a996-a4143cd9c15e
 
 ## Completed Topic ✅
 
