@@ -1,6 +1,6 @@
 # C# DotNet
 
-## Demo
+## Demo 🎥
 
 Simple Console App (CRUD)
 
@@ -10,7 +10,7 @@ Console App + Db with ADO.NET (CRUD)
 
 https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
 
-## Compeletion 
+## Completion Topic ✅
 
 - [x] C#  
 - [x] SQL
