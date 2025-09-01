@@ -26,9 +26,28 @@ https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
             - dotnet tool install --global dotnet-ef --version 7
         - Generate model from database
             - dotnet ef dbcontext scaffold "Server=.;Database=DbName;User Id=userId;Password=password;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext -t Tbl_Name -f (Note can stop building if smt err happens in code, so should put in somewhere but not main)
+            Exclude "-t Tbl_Name" if you wanna extract all tables
 
-- Postman
-- ASP.NET Core Web API
+- [x] Postman
+    - To run localhost, dotnet run --launch-profile https
+- [x] ASP.NET Core Web API
+
+### Project 1 setup
+- [x] For database setup, install the following
+    - Microsoft.EntityFrameworkCore
+    - Microsoft.EntityFrameworkCore.Design
+    - Microsoft.EntityFrameworkCore.SqlServer
+    - Microsoft.EntityFrameworkCore.Tools
+- [x] summary
+    - Database > Table
+    - Class Library > EFCore Install > Cmd
+    - API Project > Add Class Library > EFCore (Dependecy injection)
+    - API Project > Create Controller > CRUD using AppContext
+    - Class Library > Domain > BlogService > API Project > Add > Register (builder.Services.AddScoped<BlogService>();)
+
+    ## Demo
+    https://github.com/user-attachments/assets/1ee5c5e4-fd42-4c46-89b7-d3690513f7fc
+
 - Logic
 - HttpClient
 - RestSharp

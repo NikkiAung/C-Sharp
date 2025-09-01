@@ -1,0 +1,6 @@
+@JSON_to_Object_HostAddress = http://localhost:5136
+
+GET {{JSON_to_Object_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

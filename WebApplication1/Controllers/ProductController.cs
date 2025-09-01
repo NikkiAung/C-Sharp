@@ -3,32 +3,69 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Controllers
 {
+    // https://localhost:3000/api/Product
     [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
     {
+        private readonly IProductService _productService;
+
+        public ProductController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
         [HttpGet]
         public IActionResult GetProducts()
         {
-            return Ok("GetProducts");
+            var model = _productService.GetProducts();
+            return Ok(model);
+        }
+
+        [HttpGet("{pageNo}/{pageSize}")]
+        public IActionResult GetProducts(int pageNo, int pageSize)
+        {
+            var model = _productService.GetProducts(pageNo, pageSize);
+            return Ok(model);
+        }
+
+        [HttpGet("Edit/{id}")]
+        [HttpGet("{id}")]
+        public IActionResult GetProduct(int id)
+        {
+            var model = _productService.GetProductById(id);
+            if (!model.IsSuccess)
+            {
+                return NotFound(model);
+            }
+            return Ok(model);
         }
 
         [HttpPost]
-        public IActionResult CreateProducts()
+        public IActionResult CreateProduct([FromBody] ProductModel product)
         {
-            return Ok("CreateProducts");
+            Console.WriteLine("CreateProduct => " + product.ToJson());
+            var model = _productService.CreateProduct(product);
+            return Ok(_productService.CreateProduct(product));
         }
 
         [HttpPut]
-        public IActionResult CreateOrUpdateProducts()
+        public IActionResult CreateOrUpdateProduct()
         {
-            return Ok("CreateOrUpdateProducts");
+            return Ok("CreateOrUpdateProduct");
         }
 
-        [HttpPatch]
-        public IActionResult UpdateProducts()
+        [HttpPatch("{productId}")]
+        public IActionResult UpdateProduct(int productId, [FromBody] ProductModel product)
         {
-            return Ok("UpdateProducts");
+            var model = _productService.UpdateProduct(productId, product);
+            return Ok(model);
+        }
+
+        [HttpDelete]
+        public IActionResult DeleteProduct()
+        {
+            return Ok("DeleteProduct");
         }
     }
 }
