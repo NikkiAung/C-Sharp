@@ -48,11 +48,18 @@ https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
     ## Demo
     https://github.com/user-attachments/assets/1ee5c5e4-fd42-4c46-89b7-d3690513f7fc
 
-- Logic
-- HttpClient
-- RestSharp
-- Refit
-- Console App + API
+### Project 2 setup
+    - Use Microsoft Azure Studio for Database
+    - Use Dapper C# + SQL To CRUD data from Database
+    - Use HTML, CSS, Bootstrap for frontend
+    
+    ## Demo
+    https://github.com/user-attachments/assets/cf33224a-f162-433e-8d06-634f1f56b993
+
+- [x] Logic
+- [x] HttpClient
+- [x] RestSharp
+- [x] Refit
 
 ## Packages
 To install packages, check out nuget : https://www.nuget.org/

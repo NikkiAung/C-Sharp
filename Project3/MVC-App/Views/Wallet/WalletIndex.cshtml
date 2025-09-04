@@ -1,0 +1,46 @@
+﻿@model List<WalletModel>
+@{
+    int count = 0;
+    bool isSuccess = Convert.ToBoolean(TempData["IsSuccess"] ?? false);
+    string message = Convert.ToString(TempData["Message"] ?? string.Empty);
+}
+
+<h1>Wallet Users (@Model.Count)</h1>
+
+@if(!string.IsNullOrEmpty(message))
+{
+   if(isSuccess)
+   {
+       <div class="alert alert-success" role="alert">
+           A simple success alert—check it out!
+       </div>
+   }
+   else
+   {
+       <div class="alert alert-danger" role="alert">
+           A simple danger alert—check it out!
+       </div>
+   }
+}
+
+<a class="btn btn-outline-success" href="/Wallet/Create">Create</a>
+
+<table class="table table-responsive">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>User Name</th>
+            <th>Mobile No</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {   
+            <tr>
+                <td>@(count++)</td>
+                <td>@item.WalletUserName</td>
+                <td>@item.MobileNo</td>
+            </tr>
+        }
+    </tbody>
+</table>
