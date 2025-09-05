@@ -54,7 +54,7 @@ https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
 - Use HTML, CSS, Bootstrap for frontend
 
     ## Demo
-    https://github.com/user-attachments/assets/cf33224a-f162-433e-8d06-634f1f56b993
+    https://github.com/user-attachments/assets/f6724bf6-3972-4dbe-b2be-fc80edbd29cb
 
 - [x] Logic
 - [x] HttpClient
