@@ -32,6 +32,11 @@ https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
     - To run localhost, dotnet run --launch-profile https
 - [x] ASP.NET Core Web API
 
+- [x] Logic
+- [x] HttpClient
+- [x] RestSharp
+- [x] Refit
+
 ### Project 1 setup
 - [x] For database setup, install the following
     - Microsoft.EntityFrameworkCore
@@ -55,11 +60,6 @@ https://github.com/user-attachments/assets/c0529fa9-3a34-4842-9e6f-8840ddac27d4
 
     ## Demo
     https://github.com/user-attachments/assets/f6724bf6-3972-4dbe-b2be-fc80edbd29cb
-
-- [x] Logic
-- [x] HttpClient
-- [x] RestSharp
-- [x] Refit
 
 ## Packages
 To install packages, check out nuget : https://www.nuget.org/
